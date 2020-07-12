@@ -3,19 +3,25 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		839F4C1E873C578CDD9F2271 /* Pods_ContactTracing.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85251DCD1F489DC5ABC8BD11 /* Pods_ContactTracing.framework */; };
 		ED20F2F724AFF77B0092FDB0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED20F2F624AFF77B0092FDB0 /* AppDelegate.swift */; };
 		ED20F2F924AFF77B0092FDB0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED20F2F824AFF77B0092FDB0 /* SceneDelegate.swift */; };
 		ED20F2FB24AFF77B0092FDB0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED20F2FA24AFF77B0092FDB0 /* ViewController.swift */; };
 		ED20F2FE24AFF77B0092FDB0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED20F2FC24AFF77B0092FDB0 /* Main.storyboard */; };
 		ED20F30024AFF77E0092FDB0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ED20F2FF24AFF77E0092FDB0 /* Assets.xcassets */; };
 		ED20F30324AFF77E0092FDB0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED20F30124AFF77E0092FDB0 /* LaunchScreen.storyboard */; };
+		ED20F30B24AFF79C0092FDB0 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = ED20F30A24AFF79C0092FDB0 /* GoogleService-Info.plist */; };
+		EDB8F64924BA902C000CD061 /* SecondViewConrollerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDB8F64824BA902C000CD061 /* SecondViewConrollerViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		113B413C28145673FDCE765B /* Pods-ContactTracing.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ContactTracing.debug.xcconfig"; path = "Target Support Files/Pods-ContactTracing/Pods-ContactTracing.debug.xcconfig"; sourceTree = "<group>"; };
+		85251DCD1F489DC5ABC8BD11 /* Pods_ContactTracing.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ContactTracing.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9CFF1579BB1BC237FF1FEE1B /* Pods-ContactTracing.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ContactTracing.release.xcconfig"; path = "Target Support Files/Pods-ContactTracing/Pods-ContactTracing.release.xcconfig"; sourceTree = "<group>"; };
 		ED20F2F324AFF77B0092FDB0 /* ContactTracing.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ContactTracing.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED20F2F624AFF77B0092FDB0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ED20F2F824AFF77B0092FDB0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +30,8 @@
 		ED20F2FF24AFF77E0092FDB0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ED20F30224AFF77E0092FDB0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		ED20F30424AFF77E0092FDB0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ED20F30A24AFF79C0092FDB0 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		EDB8F64824BA902C000CD061 /* SecondViewConrollerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewConrollerViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +39,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				839F4C1E873C578CDD9F2271 /* Pods_ContactTracing.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0A3AB6DF6C15F534587509DD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				113B413C28145673FDCE765B /* Pods-ContactTracing.debug.xcconfig */,
+				9CFF1579BB1BC237FF1FEE1B /* Pods-ContactTracing.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		1EA249C07AB73BDEABCF1537 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				85251DCD1F489DC5ABC8BD11 /* Pods_ContactTracing.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		ED20F2EA24AFF77B0092FDB0 = {
 			isa = PBXGroup;
 			children = (
 				ED20F2F524AFF77B0092FDB0 /* ContactTracing */,
 				ED20F2F424AFF77B0092FDB0 /* Products */,
+				0A3AB6DF6C15F534587509DD /* Pods */,
+				1EA249C07AB73BDEABCF1537 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -59,9 +87,11 @@
 				ED20F2F624AFF77B0092FDB0 /* AppDelegate.swift */,
 				ED20F2F824AFF77B0092FDB0 /* SceneDelegate.swift */,
 				ED20F2FA24AFF77B0092FDB0 /* ViewController.swift */,
+				EDB8F64824BA902C000CD061 /* SecondViewConrollerViewController.swift */,
 				ED20F2FC24AFF77B0092FDB0 /* Main.storyboard */,
 				ED20F2FF24AFF77E0092FDB0 /* Assets.xcassets */,
 				ED20F30124AFF77E0092FDB0 /* LaunchScreen.storyboard */,
+				ED20F30A24AFF79C0092FDB0 /* GoogleService-Info.plist */,
 				ED20F30424AFF77E0092FDB0 /* Info.plist */,
 			);
 			path = ContactTracing;
@@ -74,9 +104,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = ED20F30724AFF77E0092FDB0 /* Build configuration list for PBXNativeTarget "ContactTracing" */;
 			buildPhases = (
+				DFAC62B95E5C95F61C388D20 /* [CP] Check Pods Manifest.lock */,
 				ED20F2EF24AFF77B0092FDB0 /* Sources */,
 				ED20F2F024AFF77B0092FDB0 /* Frameworks */,
 				ED20F2F124AFF77B0092FDB0 /* Resources */,
+				125F4477A7B1468392D342E2 /* [CP] Embed Pods Frameworks */,
+				DE2A3B164185108FA946B422 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -128,16 +161,77 @@
 				ED20F30324AFF77E0092FDB0 /* LaunchScreen.storyboard in Resources */,
 				ED20F30024AFF77E0092FDB0 /* Assets.xcassets in Resources */,
 				ED20F2FE24AFF77B0092FDB0 /* Main.storyboard in Resources */,
+				ED20F30B24AFF79C0092FDB0 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		125F4477A7B1468392D342E2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ContactTracing/Pods-ContactTracing-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ContactTracing/Pods-ContactTracing-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ContactTracing/Pods-ContactTracing-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DE2A3B164185108FA946B422 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ContactTracing/Pods-ContactTracing-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ContactTracing/Pods-ContactTracing-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ContactTracing/Pods-ContactTracing-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DFAC62B95E5C95F61C388D20 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ContactTracing-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		ED20F2EF24AFF77B0092FDB0 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EDB8F64924BA902C000CD061 /* SecondViewConrollerViewController.swift in Sources */,
 				ED20F2FB24AFF77B0092FDB0 /* ViewController.swift in Sources */,
 				ED20F2F724AFF77B0092FDB0 /* AppDelegate.swift in Sources */,
 				ED20F2F924AFF77B0092FDB0 /* SceneDelegate.swift in Sources */,
@@ -282,9 +376,11 @@
 		};
 		ED20F30824AFF77E0092FDB0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 113B413C28145673FDCE765B /* Pods-ContactTracing.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MA5J26P5SG;
 				INFOPLIST_FILE = ContactTracing/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -299,9 +395,11 @@
 		};
 		ED20F30924AFF77E0092FDB0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9CFF1579BB1BC237FF1FEE1B /* Pods-ContactTracing.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MA5J26P5SG;
 				INFOPLIST_FILE = ContactTracing/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

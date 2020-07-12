@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import FirebaseUI
 
 class ViewController: UIViewController {
 
@@ -14,7 +15,36 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
-
-
+    
+    @IBAction func login(_ sender: Any) {
+        //get default auth UI object
+        let authUI = FUIAuth.defaultAuthUI()
+        guard authUI != nil else {
+            //log error
+            return
+        }
+        //setting delegate
+        authUI?.delegate = self
+        authUI?.providers = [FUIEmailAuth()]
+        
+        //get reference to auth UI controller
+        let authViewController = authUI!.authViewController()
+        
+        //display
+        present(authViewController,animated: true,completion: nil)
+        
+    }
+    
+}
+extension ViewController : FUIAuthDelegate {
+    func authUI(_ authUI: FUIAuth, didSignInWith authDataResult: AuthDataResult?, error: Error?) {
+        //check error
+        if error != nil {
+            //log error
+        }
+        // authDataResult?.user.uid
+        performSegue(withIdentifier: "goHome", sender: self)
+    }
+    
 }
 
